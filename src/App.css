@@ -1,0 +1,11 @@
+.App {
+  max-width      : 960px;
+  display        : flex;
+  flex-direction : column;
+  margin         : 0 auto;
+  padding : 20px 100px;
+}
+.App-logo {
+  width  : 60px;
+  margin : auto;
+}
