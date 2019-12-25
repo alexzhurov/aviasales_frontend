@@ -1,0 +1,39 @@
+.Tabs {
+  box-sizing     : border-box;
+  height         : 50px;
+  width          : 100%;
+  display        : flex;
+  font-weight    : 600;
+  letter-spacing : 0.5px;
+  text-transform : uppercase;
+  font-size      : 12px;
+  margin-bottom  : 20px;
+  border-radius  : 5px;
+  overflow       : hidden;
+}
+.Tabs__item {
+  width            : 50%;
+  text-align       : center;
+  padding          : 15px 0;
+  display          : flex;
+  justify-content  : center;
+  align-items      : center;
+  background-color : var(--white);
+  border           : 1px solid #DFE5EC;
+  cursor           : pointer;
+  transition       : background-color .15ms;
+}
+.Tabs__item:first-child {
+  border-top-left-radius    : 5px;
+  border-bottom-left-radius : 5px;
+}
+.Tabs__item:last-child {
+  border-top-right-radius    : 5px;
+  border-bottom-right-radius : 5px;
+}
+
+.Tabs__item-active {
+  border           : none;
+  background-color : var(--primary);
+  color            : var(--white);
+}
