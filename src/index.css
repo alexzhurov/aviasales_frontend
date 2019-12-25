@@ -5,6 +5,15 @@ body {
   sans-serif;
   -webkit-font-smoothing  : antialiased;
   -moz-osx-font-smoothing : grayscale;
+  background              : #F3F7FA;
+  color                   : var(--dark);
+
+  /*css variable declaration*/
+  --white                 : #fff;
+  --dark                  : #4A4A4A;
+  --secondary             : #A0B0B9;
+  --primary               : #2196F3;
+  --light-blue            : #F1FCFF;
 }
 
 code {
