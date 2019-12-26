@@ -1,3 +1,5 @@
+import { ReactText } from 'react';
+
 export interface ITicketSegment {
   // Код города (iata)
   origin: string
@@ -25,3 +27,10 @@ export interface ITicket {
 }
 
 export type sortType = 'cheap' | 'fast'
+
+export interface ISearchFeedState {
+  tickets: ITicket[]
+  filter: ReactText[]
+  sort: sortType
+  apiKey: string
+}

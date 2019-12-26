@@ -42,7 +42,6 @@ class Filter extends Component<IFilterProps> {
       checkboxes: newCheckboxes
     });
     this.updateFilter({ checkboxes: newCheckboxes });
-
   }
 
   updateFilter(state: IState): void {
@@ -51,6 +50,10 @@ class Filter extends Component<IFilterProps> {
       .map((checkbox) => checkbox.steps);
 
     this.props.onFilterChanged(filters);
+  }
+
+  componentDidMount(): void {
+    this.updateFilter(this.state);
   }
 
   render(): React.ReactElement<any, string | React.JSXElementConstructor<any>> | string | number | {} | React.ReactNodeArray | React.ReactPortal | boolean | null | undefined {
