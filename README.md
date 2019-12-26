@@ -1,3 +1,14 @@
+Проект основан на шаблоне [Create React App](https://github.com/facebook/create-react-app).
+
+## Available Scripts
+
+В папке проекта достыпны скрипты ([подробнее](/Template-info.md)):
+### `yarn start`
+### `yarn start`
+### `yarn test`
+### `yarn build`
+### `yarn eject`
+
 # Тестовое задание Aviasales ([frontend](https://aviasales.recruitee.com/o/frontend-developer-js-coffeescript-react%C2%A0redux--aviasalesru))
 
 Основной frontend проект нашей команды — это страница выдачи билетов со множеством фильтров, настроек и, собственно, билетов.
@@ -7,12 +18,12 @@
 
 ## Условия
 
-- Используй React
-- Используй TS или JS
-- Работоспособность в актуальной версии Google Chrome
-- Остальное на твоё усмотрение
+- [x] Используй React
+- [x] Используй TS или JS
+- [x] Работоспособность в актуальной версии Google Chrome
+- [x] стальное на твоё усмотрение
 
-## Документация по работе с сервером: [Здесь](https://github.com/KosyanMedia/test-tasks/blob/master/aviasales_frontend/server.md)
+## Документация по работе с сервером: [Здесь](/aviasales_frontend/server.md)
 
 ## Макет
 
