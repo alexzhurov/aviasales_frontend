@@ -4,7 +4,6 @@
 
 В папке проекта достыпны скрипты ([подробнее](/Template-info.md)):
 ### `yarn start`
-### `yarn start`
 ### `yarn test`
 ### `yarn build`
 ### `yarn eject`
