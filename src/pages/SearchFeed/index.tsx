@@ -66,7 +66,6 @@ class SearchFeed extends Component<{}> {
   }
 
   onFilterChanged(filter: ReactText[]): void {
-    console.log("SearchFeed.tsx => onFilterChanged ");
     this.setState({ filter });
   }
 
@@ -75,7 +74,6 @@ class SearchFeed extends Component<{}> {
       const tickets = this.getSortedTickets(this.state.tickets, sort);
       this.setState({ ...this.state, tickets, sort });
     }
-    // check duplicated request
   }
 
   getSortedTickets(tickets: ITicket[], sort: sortType = this.state.sort): ITicket[] {
@@ -94,9 +92,8 @@ class SearchFeed extends Component<{}> {
 
 
   async componentDidUpdate(prevProps: Readonly<{}>, prevState: Readonly<ISearchFeedState>, snapshot?: any): Promise<void> {
-    console.log("index.tsx => componentDidUpdate ");
-    // filter changed
-    if (prevState.filter !== this.state.filter) {
+    const filterChanged = prevState.filter !== this.state.filter;
+    if (filterChanged) {
       await this.getTickets();
     }
   }
